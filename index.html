@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>The CSS Map!</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load('current', {
+      'packages':['geochart'],
+    });
+    google.charts.setOnLoadCallback(drawRegionsMap);
+
+    function drawRegionsMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Country', "Person", 'Popularity'],
+        ['VA', 'Vatican City - Ignore', 100],
+        ['BR', 'Brazil - Gabe', 50],
+        ['TN', 'Tunisia - Luca', 40],
+        ['ZA', 'South Africa - Adam', 25],
+        ['DE', 'Germany - Ronnie', 95],
+        ['NO', 'Norway - Enzo', 45],
+        ['AR', 'Argentina - Shane', 35],
+        ['IS', 'Iceland - Saul', 70],
+        ['LT', 'Lithuania - Tess', 80],
+        ['EE', 'Estonia - Susan', 75],
+        ['FR', 'France - Abukhayer', 85],
+        ['GF', 'French Guinea - Lisa', 45],
+        ['PG', 'Papua New Guinea - Christina', 30],
+        ['AU', 'Australia - Kiana', 70],
+        ['NZ', 'New Zealand - Karina', 40],
+        ['FJ', 'Fiji - Genet', 30],
+        ['MA', 'Morocco - Abdou', 65],
+        ['DZ', 'Algeria - Aiden', 45],
+        ['LY', 'Kimoni - Libya', 45],
+        ['EG', 'Egypt - Thomas', 65],
+        ['NE', 'Niger - Mathew S.', 55],
+        ['NG', 'Nigeria - Jules', 90],
+        ['KZ', 'Kazakhstan - Toby', 60],
+        ['GH', 'Ghana - Jhean', 40],
+        ['US', 'USA - Lupe', 85],
+        ['CU', 'Cuba - Akiva', 20],
+        ['KP', 'North Korea - Haiden', 10],
+        ['TR', 'Turkey - Alex M.', 35],
+        ['HR', 'Croatia - Michaela', 70],
+        ['NC', 'New Caledonia - Mika', 35],
+        ['RU', 'Russia - Ari', 0],
+        ['BD', 'Bangladesh - Redwan', 80],
+        ['FI', 'Finland - Leo', 80],
+        ['UA', 'Ukraine - Elais', 75],
+        ['IT', 'Italy - Mar', 90],
+        ['LV', 'Latvia - Arty', 55],
+        ['GR', 'Greece - Alex F.', 30],
+        ['AL', 'Albania - Jovanni', 35],
+        ['MK', 'North Macedonia - Christian', 35],
+        ['VU', 'Vanuatu - Judy', 35],
+        ['BE', 'Belgium - Corrine', 80],
+        ['NL', 'Netherlands - Olivia', 65],
+        ['CH', 'Switzerland - Miles', 70],
+        ['IL', 'Israel - Angus', 50],
+        ['BT', 'Bhutan - Haruki', 20],
+        ['JP', 'Japan - Seiji', 65],
+        ['TM', 'Turkmenistan - Marcus', 60],
+        ['GB', 'UK - Fatima', 70],
+        ['IE', 'Ireland - Marlene', 70],
+        ['CN', 'China - Kalen', 40],
+        ['TW', 'Taiwan - Cyrena', 85],
+        ['MN', 'Mongolia - Kai', 35],
+        ['IN', 'India - Israel', 35],
+        ['LK', 'Sri Lanka - Isaiah', 45],
+        ['SB', 'Solomon Islands - Jayda', 45],
+        ['DK', 'Denmark - Sophie', 45],
+        ['ID', 'Indonesia - Zaniya', 30],
+        ['KR', 'South Korea - Alma', 95],
+        ['RE', 'Reunion - Jessica', 5],
+        ['BG', 'Bulgaria - Rayniel', 35],
+        ['AF', 'Afghanistan - Evan', 15],
+        ['SA', 'Saudi Arabia - Lucas', 60],
+        ['MX', 'Mexico - Ignacio', 50],
+        ['BA', 'Bosnia and Herzegovnia - Stephen', 35],
+        ['MG', 'Madagascar - Chrishawn', 5],
+        ['RO', 'Romania - Morgan', 60],
+        ['PH', 'Phillipines - Ana Luz', 40],
+        ['MY', 'Malaysia - Erika', 5],
+        ['TH', 'Thailand - Kelly C.', 5],
+        ['TL', 'Timor-Leste - Precious', 10],
+        ['CA', 'Canada - Jena', 55],
+        ['GL', 'Greenland - Steven', 5],
+        ['MD', 'Moldova - Aries', 50],
+        ['PE', 'Peru - Irvin', 50],
+        ['DO', 'Dominican Republic - Cynthia', 65],
+        ['SJ', 'Svalbard - Lea', 10],
+        ['ES', 'Spain - Edmund', 55],
+        ['AE', 'UAE - Julien', 70],
+        ['KH', 'Cambodia - Ashley', 40]
+
+      ]);
+
+      var options = {backgroundColor: "#FFF", legend: {textStyle: {color: 'green', fontSize: 14}}, magnifyingGlass: {enable: true, zoomFactor: 7.5}, backgroundColor: 'lightblue', keepAspectRatio: false, displayMode: 'region', datalessRegionColor: '#b5b3b3'};
+
+      var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+      chart.draw(data, options);
+    }
+
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9775148943906373"
+     crossorigin="anonymous"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">CSS Students on the map!</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#map">Map</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#list">List</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">2025 students as a world map</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">what a great idea (remember to check the bottom of the website, it has important info)</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section map" id="map">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Map</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+              <div id="regions_div" style="width: 900px; height: 500px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">If you're wondering why you're placed on a certain part of the map, there's a button for that.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">If you're wondering why you're not on the website but you'd like to be (or you have any other questions), there's also a button for that.</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                        <i class="fas fa-download me-2"></i>
+                        Why me, here?
+                    </a>
+                                    <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                        <i class="fas fa-download me-2"></i>
+                        Questions/Application to be on map
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- List -->
+        <section class="page-section bg-white text-white mb-0" id="list">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-dark">List</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4"></h4>
+                        <p class="lead mb-0">
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About this map</h4>
+                        <p class="lead mb-0">
+                            This is a free-to-access world map tracking popularity, status, and tracking people as countries (and it updates every week :))
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Made with ❤️ by the 2025World team</small></div>
+        </div>
+    </body>
+</html>
