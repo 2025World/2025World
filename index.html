@@ -24,7 +24,7 @@
 
     function drawRegionsMap() {
       var data = google.visualization.arrayToDataTable([
-        ['Country', "Person", 'Popularity'],
+        ['Country', "Person", 'Popularity/Influence'],
         ['VA', 'Vatican City - Ignore', 100],
         ['BR', 'Brazil - Gabe', 50],
         ['TN', 'Tunisia - Luca', 40],
@@ -170,6 +170,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <img id="img1" src="assets/legend.png">
+                <p id="herelink1" class="num1">Hint: The map is interactive, tap/click!</p>
                 <div class="chart_box" id="regions_div" style="width: 80vw; height: auto;"></div>
                <p id="herelink1" class="num1">Can't find yourself? Check out the entire list of people <a id="link1" href="https://www.2025world.net/list">here</a>.</p>
                         </div>
@@ -199,7 +200,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Made with ❤️ by the 2025World team</small></div>
+            <div class="container"><small>Made with ❤️ by the 2025World team. View our changelog <a target="_blank" href="https://trello.com/b/q1gawXPE/2025-world-changelog">here.</a></small></div>
         </div>
     </body>
 </html>
