@@ -64,17 +64,7 @@
   --bs-body-bg: #fff;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-  }
-}
 #img1 {
   height: 100px;
   width: auto;
@@ -245,6 +235,17 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
 }
 
 ol ol,
